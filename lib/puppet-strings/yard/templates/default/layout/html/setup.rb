@@ -38,6 +38,10 @@ def layout
     @nav_url = url_for_list('puppet_type')
     @page_title = "Resource Type: #{object.name}"
     @path = object.path
+  when PuppetStrings::Yard::CodeObjects::TransportSchema
+    @nav_url = url_for_list('puppet_transport_schema')
+    @page_title = "Transport Schema: #{object.name}"
+    @path = object.path
   when PuppetStrings::Yard::CodeObjects::Provider
     @nav_url = url_for_list('puppet_provider')
     @page_title = "Provider: #{object.name}"

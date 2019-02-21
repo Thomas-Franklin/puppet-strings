@@ -80,3 +80,12 @@ def generate_puppet_plan_list
   @list_type = 'puppet_plan'
   generate_list_contents
 end
+
+# Generates the searchable Transport schema list.
+# @return [void]
+def generate_transport_schema
+  @items = Registry.all(:puppet_transport_schema).sort_by {|t| t.name.to_s }
+  @list_title = 'Transport Schema List'
+  @list_type = 'puppet_transport_schema'
+  generate_list_contents
+end

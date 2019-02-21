@@ -4,6 +4,7 @@ module PuppetStrings::Markdown
       final = "## Table of Contents\n\n"
 
       [PuppetStrings::Markdown::PuppetClasses,
+      PuppetStrings::Markdown::TransportSchemas,
       PuppetStrings::Markdown::DefinedTypes,
       PuppetStrings::Markdown::ResourceTypes,
       PuppetStrings::Markdown::Functions,
